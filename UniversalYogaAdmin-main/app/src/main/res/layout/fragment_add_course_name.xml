@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/nameTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/inter_regular"
+        android:text="Course Name"
+        android:textColor="#000"
+        android:textSize="15sp" />
+
+    <RelativeLayout
+        android:id="@+id/nameRl"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/card_box"
+        android:layout_below="@+id/nameTv"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp">
+
+        <EditText
+            android:background="@null"
+            android:id="@+id/courseEt"
+            android:hint="Add Course Name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="15dp"
+            android:fontFamily="@font/inter_regular"
+            android:gravity="center_vertical"
+            android:text=""
+            android:textColor="#000" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/submitClickTv"
+        android:layout_width="180dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/nameRl"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/black_btn"
+        android:fontFamily="@font/inter_regular"
+        android:gravity="center"
+        android:text="Submit"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="14sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</RelativeLayout>

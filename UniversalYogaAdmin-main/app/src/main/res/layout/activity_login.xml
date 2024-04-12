@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fff">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/Iv"
+                android:layout_width="250dp"
+                android:layout_height="300dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/splash_icon" />
+
+
+            <LinearLayout
+                android:id="@+id/emailLL"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/Iv"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/edit_box"
+                app:boxBackgroundColor="#fff">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/emailEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:hint="Email"
+                    android:textColor="#000"
+                    android:textColorHint="#000"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/passwordLL"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/emailLL"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/edit_box"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/passwordEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginEnd="35dp"
+                    android:hint="Password"
+                    android:textColor="#000"
+                    android:textColorHint="#000"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/passwordHideIv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="5dp"
+                    android:src="@drawable/hide_password" />
+
+                <ImageView
+                    android:id="@+id/passwordShowIv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="5dp"
+                    android:src="@drawable/ic_baseline_remove"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/loginClickTv"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_below="@+id/passwordLL"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="60dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/black_btn"
+                android:fontFamily="@font/inter_regular"
+                android:gravity="center"
+                android:text="LogIn"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent" />
+
+            <TextView
+                android:id="@+id/alreadyAccTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/loginClickTv"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/inter_regular"
+                android:text="Already have an account?"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/signUpTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/loginClickTv"
+                android:layout_marginStart="5dp"
+                android:layout_toRightOf="@+id/alreadyAccTv"
+                android:text="SignUp"
+                android:textColor="#0072FF" />
+
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

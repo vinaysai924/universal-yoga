@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:padding="10dp"
+    android:layout_marginBottom="40dp"
+    android:layout_marginTop="50dp"
+    android:gravity="center_horizontal">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/dayWeekTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:fontFamily="@font/inter_regular"
+                android:text="*Day of the week"
+                android:textColor="#000"
+                android:textSize="15sp" />
+
+            <RelativeLayout
+                android:id="@+id/weekLL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dayWeekTv"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/mondayCheckBox"
+                    android:textColor="#000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Monday" />
+
+                <CheckBox
+                    android:layout_toRightOf="@+id/mondayCheckBox"
+                    android:id="@+id/tuesdayCheckBox"
+                    android:textColor="#000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tuesday"/>
+
+                <CheckBox
+                    android:layout_toRightOf="@+id/tuesdayCheckBox"
+                    android:textColor="#000"
+                    android:id="@+id/wednesdayCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Wednesday"/>
+
+                <CheckBox
+                    android:layout_below="@+id/mondayCheckBox"
+                    android:textColor="#000"
+                    android:id="@+id/thursdayCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Thursday"/>
+
+                <CheckBox
+                    android:textColor="#000"
+                    android:layout_below="@+id/mondayCheckBox"
+                    android:layout_toRightOf="@+id/thursdayCheckBox"
+                    android:id="@+id/fridayCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Friday"/>
+
+                <CheckBox
+                    android:textColor="#000"
+                    android:layout_below="@+id/mondayCheckBox"
+                    android:layout_toRightOf="@+id/fridayCheckBox"
+                    android:id="@+id/saturdayCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Saturday"/>
+
+                <CheckBox
+                    android:textColor="#000"
+                    android:id="@+id/sundayCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/saturdayCheckBox"
+                    android:text="Sunday" />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/timeCourseTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/weekLL"
+                android:layout_marginStart="45dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/inter_regular"
+                android:text="*Time of course"
+                android:textColor="#000"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:id="@+id/timeLL"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/timeCourseTv"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:background="@drawable/light_edit_box">
+
+                <Spinner
+                    android:id="@+id/timeCourseSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/white"
+                    android:layout_below="@+id/timeCourseTv" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/capacityTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/timeLL"
+                android:layout_marginStart="45dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/inter_regular"
+                android:text="*Capacity"
+                android:textColor="#000"
+                android:textSize="15sp" />
+
+            <RelativeLayout
+                android:id="@+id/capacityRl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/capacityTv"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:background="@drawable/card_box">
+
+                <EditText
+                    android:id="@+id/capacityEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:inputType="number"
+                    android:layout_marginStart="15dp"
+                    android:background="@android:color/transparent"
+                    android:textColor="#000" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/durationTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/capacityRl"
+                android:layout_marginStart="45dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/inter_regular"
+                android:text="*Duration"
+                android:textColor="#000"
+                android:textSize="15sp" />
+
+
+            <RelativeLayout
+                android:id="@+id/durationRl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/durationTv"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:background="@drawable/card_box">
+
+                <EditText
+                    android:id="@+id/durationEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="15dp"
+                    android:inputType="number"
+                    android:background="@android:color/transparent"
+                    android:textColor="#000" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/priceClassTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/durationRl"
+                android:layout_marginStart="45dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/inter_regular"
+                android:text="*Price per class"
+                android:textColor="#000"
+                android:textSize="15sp" />
+
+            <RelativeLayout
+                android:id="@+id/priceClassRl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/priceClassTv"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:background="@drawable/card_box">
+
+                <EditText
+                    android:id="@+id/priceClassEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="15dp"
+                    android:background="@android:color/transparent"
+                    android:inputType="number"
+                    android:textColor="#000" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/typeClassTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/priceClassRl"
+                android:layout_marginStart="45dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/inter_regular"
+                android:text="*Type of class"
+                android:textColor="#000"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:id="@+id/typeLL"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/typeClassTv"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:background="@drawable/light_edit_box">
+                <Spinner
+                    android:id="@+id/typeClassSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@android:color/holo_red_light"
+
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/discripitionTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/typeLL"
+                android:layout_marginStart="45dp"
+                android:layout_marginTop="20dp"
+                android:text="Description"
+                android:textColor="#000"
+                android:textSize="14sp" />
+
+            <RelativeLayout
+                android:id="@+id/discripitonRl"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/discripitionTv"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:background="@drawable/card_box">
+
+                <EditText
+                    android:id="@+id/discripitionEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="15dp"
+                    android:background="@android:color/transparent"
+                    android:textColor="#000" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/submitClickTv"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_below="@+id/discripitonRl"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/black_btn"
+                android:fontFamily="@font/inter_regular"
+                android:gravity="center"
+                android:text="Submit"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="14sp"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/discripitonRl"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/editTv"
+                    android:layout_width="90dp"
+                    android:layout_height="35dp"
+                    android:layout_below="@+id/discripitonRl"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/black_btn"
+                    android:fontFamily="@font/inter_regular"
+                    android:gravity="center"
+                    android:text="Edit"
+                    android:textAlignment="center"
+                    android:textColor="#fff"
+                    android:textSize="14sp"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toRightOf="parent" />
+
+                <TextView
+                    android:id="@+id/confirmTv"
+                    android:layout_width="90dp"
+                    android:layout_height="35dp"
+                    android:layout_below="@+id/discripitonRl"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/black_btn"
+                    android:fontFamily="@font/inter_regular"
+                    android:gravity="center"
+                    android:text="Confirm"
+                    android:textAlignment="center"
+                    android:textColor="#fff"
+                    android:textSize="14sp"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toRightOf="parent" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

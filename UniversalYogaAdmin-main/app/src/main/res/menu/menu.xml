@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/home_icon"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/booking"
+        android:icon="@drawable/check"
+        android:title="Booking" />
+
+    <item
+        android:id="@+id/addCourse"
+        android:icon="@drawable/add"
+        android:title="Add Course" />
+
+<!--    <item-->
+<!--        android:id="@+id/course"-->
+<!--        android:icon="@drawable/course_icon"-->
+<!--        android:title="Course" />-->
+
+<!--    <item-->
+<!--        android:id="@+id/profile"-->
+<!--        android:icon="@drawable/ic_baseline_person_outline"-->
+<!--        android:title="Profile" />-->
+</menu>
+

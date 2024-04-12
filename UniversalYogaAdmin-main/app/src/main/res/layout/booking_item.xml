@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/nodatatxt"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/black"
+            android:textSize="19sp"
+            android:text="No Data is available"/>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:fontFamily="@font/inter_regular"
+            android:gravity="center_vertical"
+            android:text="Name"
+            android:textColor="#000"
+            android:textSize="15sp" />
+
+        <RelativeLayout
+            android:id="@+id/nameRl"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/name"
+            android:layout_marginStart="40dp"
+            android:background="@drawable/card_box"
+            android:layout_marginEnd="40dp">
+
+            <TextView
+                android:id="@+id/userNameTv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="15dp"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical"
+                android:inputType="text"
+                android:textColor="#000" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/dateTv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nameRl"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/inter_regular"
+            android:text="Date"
+            android:textColor="#000"
+            android:textSize="15sp" />
+
+        <RelativeLayout
+            android:id="@+id/dateRl"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/dateTv1"
+            android:background="@drawable/card_box"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp">
+
+            <TextView
+                android:id="@+id/userDateTv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="15dp"
+                android:gravity="center_vertical"
+                android:textColor="#000" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/dayTv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dateRl"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/inter_regular"
+            android:text="Day"
+            android:textColor="#000"
+            android:textSize="15sp" />
+
+        <RelativeLayout
+            android:id="@+id/dayRl"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/dayTv1"
+            android:background="@drawable/card_box"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp">
+
+            <TextView
+                android:id="@+id/userDayTv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="15dp"
+                android:gravity="center_vertical"
+                android:textColor="#000" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/typeClassTv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dayRl"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/inter_regular"
+            android:text="Type of class"
+            android:textColor="#000"
+            android:textSize="15sp" />
+
+        <RelativeLayout
+            android:id="@+id/typeClassRl"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/card_box"
+            android:layout_below="@+id/typeClassTv1"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp">
+
+            <TextView
+                android:id="@+id/userTypeClassTv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="15dp"
+                android:gravity="center_vertical"
+                android:textColor="#000" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/priceClassTv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/typeClassRl"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/inter_regular"
+            android:text="Price of class"
+            android:textColor="#000"
+            android:textSize="15sp" />
+
+        <RelativeLayout
+            android:id="@+id/priceClassRl"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/card_box"
+            android:layout_below="@+id/priceClassTv1"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp">
+
+            <TextView
+                android:id="@+id/userPriceClassTv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="15dp"
+                android:gravity="center_vertical"
+                android:textColor="#000" />
+        </RelativeLayout>
+
+<!--        <TextView-->
+<!--            android:id="@+id/nextClickTv"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="35dp"-->
+<!--            android:layout_below="@+id/priceClassRl"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:layout_marginStart="30dp"-->
+<!--            android:layout_marginTop="30dp"-->
+<!--            android:layout_marginEnd="30dp"-->
+<!--            android:layout_marginBottom="20dp"-->
+<!--            android:background="@drawable/black_btn"-->
+<!--            android:fontFamily="@font/inter_regular"-->
+<!--            android:gravity="center"-->
+<!--            android:text="Continue"-->
+<!--            android:textAlignment="center"-->
+<!--            android:textColor="#fff"-->
+<!--            android:textSize="14sp"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintRight_toRightOf="parent" />-->
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
